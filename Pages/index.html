@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title> Felix Chua Photos </title>
+
+        <meta name="description" content="photography">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/Assignment 1/Styles/mainSheet.css">
+
+        <style>
+
+            main{
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #one, #two{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+
+            #one{
+                padding-left: 1%;
+            }
+
+            .imgDiv{
+                width: fit-content;
+            }
+
+            .wedImg{
+                height: 50vh;
+            }
+
+            #two{
+                flex-flow: column;
+                font-size: 5em;
+            }
+
+            .links:hover{
+                color:palevioletred;
+            }
+
+        </style>
+
+        <script src="/Assignment 1/Scripts/index.js" async defer>
+
+        </script>
+
+        <script src="/Assignment 1/Scripts/packageBtn.js" async defer>
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+
+        </nav>
+
+        <main>
+
+            <section id="one">
+
+                <div class="imgDiv" id="firstDiv">
+
+                    <img class="wedImg" id="firstImg" src="/Assignment 1/Media/pexels-jibarofoto-1560303.jpg" loading="lazy">
+
+                </div>
+
+                <div class="imgDiv" id="firstDiv">
+
+                    <img class="wedImg" id="secImg" src="/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg" loading="lazy">
+
+                </div>
+
+            </section>
+
+            <section id="two">
+
+                <p class="titleText"> Felix Chua Photos </p>
+
+                <p class="titleText"> Wedding Photographer </p>
+
+            </section>
+
+        </main>
+
+        <footer id="footer">
+
+            
+
+        </footer>
+
+    </body>
+
+</html>

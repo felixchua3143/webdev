@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title> Felix Chua Photos </title>
+
+        <meta name="description" content="photography">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/Assignment 1/Styles/mainSheet.css">
+
+        <style>
+
+            header{
+                text-align: center;
+                font-size: 4em;
+                padding-top: 1%;
+            }
+
+            main{
+                height: 80%;
+                display: grid;
+                grid-auto-flow: column;
+                justify-items: center;
+                align-items: center;
+                gap: 1.5em;
+            }
+
+            form{
+                display: flex;
+                flex-flow: column;
+                background-color: pink;
+                width: 20em;
+                border-radius: 10px;
+                padding: 1%;
+                box-shadow: -15px 15px 0px -1px rgba(253,186,186,0.6);
+                font-size: x-large;
+                height: 20em;
+                width: 20em;
+            }
+
+            #buttons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row;
+                height: 100%;
+            }
+
+            .formBtn{
+                padding: 10%;
+                margin: 1%;
+                background-color: beige;
+                border: 0;
+                cursor: pointer;
+                font-size: large;
+            }
+
+            .formBtn:hover{
+                background-color: palevioletred;
+                transition: 0.1s;
+            }
+
+            #packageList{
+                background-color: pink;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1%;
+                border-radius: 10px;
+                box-shadow: 15px 15px 0px -1px rgba(253,186,186,0.6);
+                font-size: x-large;
+                height: 20em;
+                width: 20em;
+            }
+
+            #packageImg{
+                height: 10em;
+            }
+
+        </style>
+
+        <script src="/Assignment 1/Scripts/packageList.js" async defer>
+
+        </script>
+
+        <script src="/Assignment 1/Scripts/index.js" async defer>
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+
+        </nav>
+
+        <header>
+
+            <p id="headerText"> Check Out </p>
+
+        </header>
+
+        <main> 
+            
+            <form class="registration-form">
+
+                <fieldset class="personal-details">
+
+                    <legend> Personal Details </legend>
+
+                    <table class="form-table">
+
+                        <tr>
+                            <td>
+                                <label for="first-name">First Name: <input type="textbox" class="inputboxsize" id="first-name" autocomplete="on" placeholder="First name" required> </label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="last-name">Last Name: <input type="text" class="inputboxsize" id="last-name" autocomplete="on" placeholder="Last name" required></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="phone-number"> Phone Number: <input type="text" class="inputboxsize" id="phone-number" autocomplete="on" placeholder="Phone Number"  required></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email">Email: <input type="email" class="inputboxsize" id="email" autocomplete="on" placeholder="Email"  required></label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    </table>
+
+                </fieldset>
+
+                <p> &nbsp </p>
+
+                <fieldset class="payment-details">
+
+                    <legend> Payment Details </legend>
+
+                    <table class="form-table">
+
+                        <tr class="debit-row">
+                            <td>
+                            <label for="db/cr-payment">Card number: <input type="textbox" class="inputboxsize" id="cardnumber" placeholder="123456789102" required></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cvs">CVS: <input type="textbox" class="inputboxsize" title="Three numbers at the back of card" id="cvs" placeholder="123" required></label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cardexpiry">Expiry number: <input type="expiry date" class="inputboxsize" id="expiry date" placeholder="12/34" required>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+                <div id="buttons">
+                    
+                        <button class="formBtn" id="submitBtn" type="submit" style="border-radius:15px;"> Submit
+                        </button>
+        
+                        <button class="formBtn" id="clearBtn" type="reset" style="border-radius:15px;"> Clear Details
+                        </button>
+                        
+                </div id="buttons">
+
+            </form>
+
+            <section id="packageList">
+
+                <div id="packageTitle"> 
+                    
+                    <p> Your Chosen Package: </p>
+                
+                </div>
+
+                <div id="packageImgDiv">
+
+                    <img id="packageImg" src="/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg"> 
+
+                </div>
+
+                <div id="packageName">
+
+                    <p> Package 1 </p>
+
+                </div>
+
+                <div id="packagePrice">
+
+                    <p> $1500 </p>
+
+                </div>
+
+            </section>
+            
+        </main>
+
+        <footer id="footer">
+
+        </footer>
+
+    </body>
+
+</html>

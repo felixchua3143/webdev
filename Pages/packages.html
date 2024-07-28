@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title> Felix Chua Photos </title>
+
+        <meta name="description" content="photography">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/Assignment 1/Styles/mainSheet.css">
+
+        <style>
+
+            header{
+                text-align: center;
+                font-size: 4em;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+
+            main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+                gap: 1.5em;
+            }
+
+            .packageSect{
+                background-color: pink;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                padding: 1%;
+                box-shadow: 15px 15px 0px -1px rgba(253,186,186,0.6);
+            }
+
+            #package1{
+                box-shadow: -15px 15px 0px -1px rgba(253,186,186,0.6)
+            }
+
+            
+            #package2{
+                box-shadow: 0px 15px 0px -1px rgba(253,186,186,0.6)
+            }
+
+            .packageInfo{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding-top: 7%;
+                padding-bottom: 7%;
+            }
+
+            #packageImg1{
+                height: 5em;
+            }
+
+            .packageName{
+                padding-bottom: 1em;
+            }
+
+            .packageDesc, .packageItems{
+                font-size: 0.6em;
+            }
+            
+            .packagePrice{
+                padding-top: 1em;
+            }
+
+            .packageItemsList{
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                padding-top: 1em;
+            }
+
+            .buyBtn{
+                background-color: beige;
+                width: fit-content;                
+                border-radius: 5px;
+                border: 0;
+                cursor: pointer;
+                padding: 1em;
+            }
+
+        </style>
+
+        <script src="/Assignment 1/Scripts/products.js">
+            
+        </script>
+
+        <script src="/Assignment 1/Scripts/purchase.js" async defer>
+
+        </script>
+    
+        <script src="/Assignment 1/Scripts/index.js" async defer>
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+
+        </nav>
+
+        <header>
+
+            <p id="headerText"> Packages </p>
+
+        </header>
+
+        <main>
+            
+            <section class="packageSect" id="package1">
+
+                <img id="packageImg1" src="/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg">
+
+                <div class="packageInfo">
+
+                    <p class="packageName"> Package 1 </p>
+                    
+                    <p class="packageDesc"> Our cheapest package! It includes: 
+                    
+                    </p>
+                    
+                    <ul class="packageItemsList">
+                    
+                        <li class="packageItems"> 4 Hours of Photography Coverage (Minimum of 200 images) </li>
+                        <li class="packageItems"> 4 - 6 weeks for delivery of softcopy images </li>
+                    
+                    </ul>
+                    
+                    <p class="packagePrice"> $1500 </p>
+
+                </div>
+                
+                <input id="0" class="buyBtn" type="button" name="buyBtn1" value="Buy!" onclick="addCart(0)"> 
+
+            </section>
+
+            <section class="packageSect" id="package2">
+
+                <img id="packageImg1" src="/Assignment 1/Media/Spring-Wedding-Show.jpg">
+
+                <div class="packageInfo">
+
+                    <p class="packageName"> Package 2 </p>
+                    
+                    <p class="packageDesc"> Our most-bought package! It includes: 
+                    
+                    </p>
+                    
+                    <ul class="packageItemsList">
+                    
+                        <li class="packageItems"> 6 Hours of Photography Coverage (Minimum of 300 images) </li>
+                        <li class="packageItems"> 3 weeks for delivery of softcopy images </li>
+                        <li class="packageItems"> 3 hours of Videography Coverage (Minimum of 2 mins)</li>
+                    
+                    </ul>
+                    
+                    <p class="packagePrice"> $2500 </p>
+
+                </div>
+                
+                <input id="0" class="buyBtn" type="button" name="buyBtn1" value="Buy!" onclick="addCart(1)"> 
+
+            </section>
+
+            <section class="packageSect" id="package3">
+
+                <img id="packageImg1" src="/Assignment 1/Media/Confetti.jpeg">
+
+                <div class="packageInfo">
+
+                    <p class="packageName"> Package 3 </p>
+                    
+                    <p class="packageDesc"> Our top-tier package! It includes: 
+                    
+                    </p>
+                    
+                    <ul class="packageItemsList">
+                    
+                        <li class="packageItems"> 8 Hours of Photography Coverage (Minimum of 400 images) </li>
+                        <li class="packageItems"> 2 weeks for delivery of softcopy images </li>
+                        <li class="packageItems"> 6 hours of Videography Coverage (Minimum of 4 mins)</li>
+                    
+                    </ul>
+                    
+                    <p class="packagePrice"> $3000 </p>
+
+                </div>
+                
+                <input id="0" class="buyBtn" type="button" name="buyBtn1" value="Buy!" onclick="addCart(2)"> 
+
+            </section>
+
+        </main>
+
+        <footer id="footer">
+
+        </footer>
+
+    </body>
+
+</html>
