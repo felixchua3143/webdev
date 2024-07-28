@@ -14,9 +14,17 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="/Assignment 1/Styles/mainSheet.css">
+        <link rel="stylesheet" href="/Styles/mainSheet.css">
 
-        <script src="/Assignment 1/Scripts/index.js" async defer>
+        <script src="/Scripts/index.js" async defer>
+
+        </script>
+
+        <script async defer>
+
+                        document.getElementById("packageName").innerHTML = window.location.search
+                        document.getElementById("phone-number").innerHTML = window.location.search
+                        document.getElementById("email").innerHTML = window.location.search
 
         </script>
 
@@ -27,6 +35,18 @@
         <nav id="navbar">
 
         </nav>
+
+        <main></main>
+
+            <p>
+
+                Thanks for buying <span id="packageName"> </span>
+
+                We will contact you through <span id="number"> </span> or <span id="email"> </span> soon!
+
+            </p>
+
+        </main>
 
         <footer id="footer">
 
